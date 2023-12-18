@@ -8,7 +8,15 @@ import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
-import { GoogleMap } from '@ionic-native/google-maps';
+import { 
+  GoogleMap, 
+  GoogleMaps,
+  GoogleMapsEvent,
+  GoogleMapOptions,
+  CameraPosition,
+  MarkerOptions,
+  Marker
+ } from '@ionic-native/google-maps';
 
 @NgModule({
   declarations: [AppComponent],

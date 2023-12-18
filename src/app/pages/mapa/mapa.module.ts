@@ -1,7 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { GoogleMap, GoogleMaps } from '@ionic-native/google-maps';
+import { 
+  GoogleMap, 
+  GoogleMaps,
+  GoogleMapsEvent,
+  GoogleMapOptions,
+  CameraPosition,
+  MarkerOptions,
+  Marker,
+ } from '@ionic-native/google-maps';
 
 import { IonicModule } from '@ionic/angular';
 

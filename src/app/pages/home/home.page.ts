@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { FirestoreService } from 'src/app/services/firestore.service';
 import { __values } from 'tslib';
 
 @Component({
@@ -16,10 +17,14 @@ export class HomePage implements OnInit {
   constructor(
     private activatedRoute: ActivatedRoute,
     private http: HttpClient,
+    private firestore: FirestoreService
   ) { }
 
   ngOnInit() {
     
   }
 
+  getUsers(){
+    this.firestore.getCollection()
+  }
 }

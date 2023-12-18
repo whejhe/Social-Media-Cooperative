@@ -1,0 +1,117 @@
+|-- src
+|   |-- /assets
+|   |   |-- /icon
+|   |   |-- /image
+|   |-- /environments
+|   |   |-- environments.prod.ts
+|   |   |-- environments.ts
+|   |-- /theme
+|   |   |-- variables.scss
+|   |-- /app
+|   |   |-- components
+|   |   |   |-- cooperativa
+|   |   |   |   |-- cooperativa.component.ts
+|   |   |   |   |-- cooperativa.component.html
+|   |   |   |   |-- cooperativa.component.scss
+|   |   |   |-- lista-colaborativa
+|   |   |   |   |-- lista-colaborativa.component.ts
+|   |   |   |   |-- lista-colaborativa.component.html
+|   |   |   |   |-- lista-colaborativa.component.scss
+|   |   |   |-- mapa
+|   |   |   |   |-- mapa.component.ts
+|   |   |   |   |-- mapa.component.html
+|   |   |   |   |-- mapa.component.scss
+|   |   |-- services
+|   |   |   |-- cooperativa.service.ts
+|   |   |   |-- lista-colaborativa.service.ts
+|   |   |   |-- autenticacion.service.ts
+|   |   |-- pipes
+|   |   |   |-- fecha-hora.pipe.ts
+|   |   |   |-- filtrado-de-datos.pipe.ts
+|   |   |   |-- filtrado-de-estado.pipe.ts
+|   |   |   |-- formato-monedas.pipe.ts
+|   |   |   |-- ordenar-listas.pipe.ts
+|   |   |   |-- pipe.module.ts
+|   |   |-- models
+|   |   |   |-- cooperativa.model.ts
+|   |   |   |-- lista-colaborativa.model.ts
+|   |   |   |-- usuario.model.ts
+|   |   |-- pages
+|   |   |   |-- auth
+|   |   |   |   |-- login
+|   |   |   |   |   |-- login.page.ts
+|   |   |   |   |   |-- login.page.html
+|   |   |   |   |   |-- login.page.scss
+|   |   |   |   |-- registro
+|   |   |   |   |   |-- registro.page.ts
+|   |   |   |   |   |-- registro.page.html
+|   |   |   |   |   |-- registro.page.scss
+|   |   |   |-- home
+|   |   |   |   |-- home.page.ts
+|   |   |   |   |-- home.page.html
+|   |   |   |   |-- home.page.scss
+|   |   |   |-- cooperativa
+|   |   |   |   |-- cooperativa.page.ts
+|   |   |   |   |-- cooperativa.page.html
+|   |   |   |   |-- cooperativa.page.scss
+|   |   |   |-- lista-colaborativa
+|   |   |   |   |-- lista-colaborativa.page.ts
+|   |   |   |   |-- lista-colaborativa.page.html
+|   |   |   |   |-- lista-colaborativa.page.scss
+|   |   |   |-- mapa
+|   |   |   |   |-- mapa.page.ts
+|   |   |   |   |-- mapa.page.html
+|   |   |   |   |-- mapa.page.scss
+|   |   |-- app-routing.module.ts
+|   |   |-- app.component.ts
+|   |   |-- app.component.html
+|   |   |-- app.component.scss
+|   |-- global.scss
+|   |-- index.html
+|   |-- main.ts
+|   |-- polyfills.ts
+|   |-- zone-flags.ts
+|-- angular.json
+|-- package.json
+|-- capacitor.config.ts
+|-- ionic.config.json
+|-- karma.conf.js
+|-- tsconfig.json
+
+Componentes:
+ionic generate component components/cooperativa
+
+ionic generate component components/lista-colaborativa
+
+ionic generate component components/mapa
+
+Servicios:
+ng generate service services/cooperativa
+
+ng generate service services/lista-colaborativa
+
+ng generate service services/autenticacion
+
+Paginas:
+ionic generate page pages/auth/login
+
+ionic generate page pages/auth/registro
+
+ionic generate page pages/home
+
+ionic generate page pages/cooperativa
+
+ionic generate page pages/lista-colaborativa
+
+ionic generate page pages/mapa
+
+pipes:
+ng generate pipe pipes/FiltradoDeDatos
+
+ng generate pipe pipes/FormatoMonedas
+
+ng generate pipe pipes/FechaHora
+
+ng generate pipe pipes/OrdenarListas
+
+ng generate pipe pipes/FiltradoDeEstado

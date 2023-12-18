@@ -77,6 +77,7 @@
 |-- ionic.config.json
 |-- karma.conf.js
 |-- tsconfig.json
+|-- yarn.lock
 
 Componentes:
 ionic generate component components/cooperativa

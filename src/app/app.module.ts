@@ -1,22 +1,15 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouteReuseStrategy } from '@angular/router';
-import { PipeModule } from './pipes/pipe.module';
-
+import { HttpClientModule } from '@angular/common/http';
 import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
-import { 
-  GoogleMap, 
-  GoogleMaps,
-  GoogleMapsEvent,
-  GoogleMapOptions,
-  CameraPosition,
-  MarkerOptions,
-  Marker
- } from '@ionic-native/google-maps';
+import { PipeModule } from './pipes/pipe.module';
+import { environment } from 'src/environments/environment';
+
 
 @NgModule({
   declarations: [AppComponent],
@@ -28,10 +21,7 @@ import {
     PipeModule,
   ],
   providers: [
-    GoogleMap,
-    { provide: RouteReuseStrategy, 
-      useClass: IonicRouteStrategy, 
-    }
+    
   ],
   bootstrap: [AppComponent],
 })

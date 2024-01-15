@@ -12,6 +12,7 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PipeModule } from './pipes/pipe.module';
 import { environment } from 'src/environments/environment';
+import { CooperativaPageModule } from './pages/cooperativa/cooperativa.module';
 
 
 @NgModule({
@@ -24,7 +25,8 @@ import { environment } from 'src/environments/environment';
     PipeModule,
     AngularFireModule.initializeApp(environment.firebaseConfig),
     AngularFireAuthModule,
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    CooperativaPageModule
   ],
   providers: [
     

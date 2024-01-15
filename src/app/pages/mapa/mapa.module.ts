@@ -2,14 +2,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { 
-  GoogleMap, 
-  GoogleMaps,
-  GoogleMapsEvent,
-  GoogleMapOptions,
   CameraPosition,
   MarkerOptions,
   Marker,
- } from '@ionic-native/google-maps';
+} from '@ionic-native/google-maps';
 
 import { IonicModule } from '@ionic/angular';
 
@@ -25,7 +21,7 @@ import { MapaPage } from './mapa.page';
     MapaPageRoutingModule,
   ],
   providers: [
-    GoogleMaps,
+    
   ],
   declarations: [MapaPage]
 })
